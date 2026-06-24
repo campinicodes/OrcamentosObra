@@ -15,8 +15,8 @@ class CatalogoDeMateriais : AppCompatActivity() {
         setContentView(R.layout.activity_catalogo_de_materiais)
         val finalizarCompra = findViewById<Button>(R.id.finalizarCompra)
         finalizarCompra.setOnClickListener {
-            val intent = Intent(this, Finalizacao::class.java)
-            startActivity(intent)
+            val intento = Intent(this, Carrinho::class.java)
+            startActivity(intento)
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
