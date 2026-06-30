@@ -40,8 +40,7 @@ class ProdutoAdapter(
 
         holder.botao.setOnClickListener {
 
-            // Depois colocaremos:
-            // Carrinho.adicionar(produto)
+            Cart.adicionar(produto)
 
             Toast.makeText(
                 holder.itemView.context,

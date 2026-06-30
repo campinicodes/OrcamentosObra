@@ -20,6 +20,14 @@ class CatalogoDeMateriais : AppCompatActivity() {
         val finalizarCompra = findViewById<Button>(R.id.finalizarCompra)
         recycler.adapter = ProdutoAdapter(Catalogo.produtos)
         finalizarCompra.setOnClickListener {
+            val lista = Cart.produtos.joinToString(
+                separator = "\n"
+            ) { produto ->
+                "${produto.nome} - R$ %.2f".format(produto.preco)
+            }
+
+            val total = Cart.total()
+
             val intento = Intent(this, Carrinho::class.java)
             startActivity(intento)
         }
