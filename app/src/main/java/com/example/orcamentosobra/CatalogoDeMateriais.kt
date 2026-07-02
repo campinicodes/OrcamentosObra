@@ -29,6 +29,8 @@ class CatalogoDeMateriais : AppCompatActivity() {
             val total = Cart.total()
 
             val intento = Intent(this, Carrinho::class.java)
+            intento.putExtra("lista", lista)
+            intento.putExtra("total", total)
             startActivity(intento)
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
