@@ -35,8 +35,10 @@
 
     <Button
         android:id="@+id/btnAdicionar"
-        android:layout_width="50dp"
+        android:layout_width="66dp"
         android:layout_height="50dp"
-        android:text="+"/>
+        android:backgroundTint="#2A2525"
+        android:text="+"
+        android:textColorHint="#000000" />
 
 </LinearLayout>

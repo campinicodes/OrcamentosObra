@@ -8,26 +8,25 @@
     tools:context=".Carrinho">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Carrinho"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <TextView
         android:id="@+id/txtProdutos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Produtos" />
+        android:layout_marginBottom="484dp"
+        android:text="Produtos"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTotal"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/txtTotal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:text="Total"
-        app:layout_constraintBottom_toTopOf="@+id/textView3" />
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/confirmarCompra"
+        tools:layout_editor_absoluteX="0dp" />
 
     <Button
         android:id="@+id/confirmarCompra"
